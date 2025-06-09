@@ -6,9 +6,9 @@
 var maxOperations = function (nums, k) {
   nums.sort((a, b) => a - b);
 
-  let left = 0,
-    right = nums.length - 1;
-  count = 0;
+  let left = 0;
+  let right = nums.length - 1;
+  let count = 0;
 
   while (left < right) {
     let sum = nums[left] + nums[right];
